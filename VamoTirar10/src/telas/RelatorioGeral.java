@@ -64,7 +64,8 @@ public class RelatorioGeral extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(2).setMaxWidth(200);
         }
 
-        jButton1.setText("Voltar");
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setText("Cancelar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -118,7 +119,7 @@ public class RelatorioGeral extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        new Inicial().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
