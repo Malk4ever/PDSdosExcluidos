@@ -2,7 +2,7 @@
  *
  * @author Davidson
  */
-package telas;
+package restaurante;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;//java.swing.JFrame e javax.swing,JLabel
