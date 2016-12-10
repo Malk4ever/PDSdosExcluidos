@@ -17,8 +17,8 @@ import java.sql.SQLException;
 public class Conn {//com todas as partes para fazer a conecção com o servidor
     private static String user ="root";//o usuário é o raiz
     private static String server = "localhost";//busca no servidor local
-    private static String pass = "";//vai receber a string
-    private static String database = "artemis";//nome do banco 
+    private static String pass = "2508";//vai receber a string
+    private static String database = "restaurante";//nome do banco 
     private final static String driver = "com.mysql.jdbc.Driver";//?
     private static Connection conn = null;//estado da conecção
     private static Conn uniqueInstance;//implementação do singleton

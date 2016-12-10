@@ -15,24 +15,7 @@ import java.util.ArrayList;
  * @author Wallison
  */
 public abstract class DAO{
-    public abstract void insert(Object element);// metodo que recebe um objeto para inserir
-    public abstract ArrayList select(String seletion);//recebe string para fazer a seleção e recebe seleção ArrayList
-    public abstract void update(Object object, String selection);// recebe objeto e string seleção e atualiza no banco
+    public abstract void insert();// metodo que recebe um objeto para inserir
     
-    public void delete(String selection){
-        Class  classe = this.getClass();// é uma maneira de pegar informações da classe
-        String nameClasse = classe.getSimpleName().toLowerCase();// deixa tudo minuscula e pega o nome classe
-        String table = "";
-        String[] sv = nameClasse.split("dao");
-        table = sv[1];
-        String sql = "DELETE FROM "+table+" WHERE "+selection; // monta a pesquisa com table=classe, vem o selection       
-       //coloca no try a seguir
-        try{
-            PreparedStatement stmt = Conn.getInstance().getConnection().prepareStatement(sql);   //prepara o comando 
-            stmt.execute();//executa a busca
-        }catch(SQLException ex){//não deu captura exceção
-            
-        }
-
-    }
+    
 }
