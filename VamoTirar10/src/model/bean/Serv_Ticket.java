@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author Leon
  */
-public class Serv_Ticket {
+public class Serv_ticket {
     private  int id_SR_T;
     private  int id_SR;
     private  Date us;
