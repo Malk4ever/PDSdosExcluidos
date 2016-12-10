@@ -11,7 +11,7 @@ package restaurante;
  */
 abstract class Facede {
     //calcula o troco na venda de tickets e seta o livro caixa, retorna o troco.
-    abstract float calculoTroco(int qtdTicket, float valorTicket, float valorPago,float troco);
+    abstract float calculoTroco(int qtdTicket, float valorTicket, float valorPago);
     //imprime os tickets no arquivo selecionado.
     abstract void imprimeTicket(int qtdImpressões);
     //recebe os tickets dos clientes, seta o ticket como usado no banco, retorna se ticket verdadeiro ou falso.
@@ -26,8 +26,4 @@ abstract class Facede {
     abstract void relatotioCliente(String tipo, int identificador);
     //criar funcionário do tipo gerente (pode tudo) ou do tipo funcionário do ru (pode vender e receber)
     abstract void criaFuncionario(String tipo, String nome, String login, String senha);
-    
-    
-    
-    
 }
