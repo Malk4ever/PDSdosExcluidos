@@ -15,9 +15,9 @@ import java.util.ArrayList;
  * @author Wallison
  */
 public abstract class DAO{
-    public abstract void insert(Object element);
-    public abstract ArrayList select(String seletion);
-    public abstract void update(Object object, String selection);
+    public abstract void insert(Object element);// metodo que recebe um objeto para inserir
+    public abstract ArrayList select(String seletion);//recebe string para fazer a seleção e recebe seleção ArrayList
+    public abstract void update(Object object, String selection);// recebe objeto e string seleção e atualiza no banco
     
     public void delete(String selection){
         Class  classe = this.getClass();// é uma maneira de pegar informações da classe
