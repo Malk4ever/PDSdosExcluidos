@@ -9,12 +9,12 @@ package telas;
  *
  * @author Germanno C Rocha
  */
-public class RelatorioGeral extends javax.swing.JFrame {
+public class RelatorioCliente extends javax.swing.JFrame {
 
     /**
      * Creates new form RelatorioGeral
      */
-    public RelatorioGeral() {
+    public RelatorioCliente() {
         initComponents();
     }
 
@@ -73,7 +73,7 @@ public class RelatorioGeral extends javax.swing.JFrame {
         });
 
         JRelatorio.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        JRelatorio.setText("Relatório Geral");
+        JRelatorio.setText("Relatório Cliente");
         JRelatorio.setAlignmentY(0.0F);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
