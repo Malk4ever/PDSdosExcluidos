@@ -117,14 +117,17 @@ public class Cadastros extends javax.swing.JFrame {
 
     private void BCadastrarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCadastrarClienteActionPerformed
         new pds.telas.CadastroCliente().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BCadastrarClienteActionPerformed
 
     private void BBuscarCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BBuscarCadastroActionPerformed
         new BuscarCliente().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BBuscarCadastroActionPerformed
 
     private void BCancelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCancelaActionPerformed
         new Inicial().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BCancelaActionPerformed
 
     /**

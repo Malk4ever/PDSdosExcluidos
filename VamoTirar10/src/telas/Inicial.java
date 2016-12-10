@@ -164,29 +164,34 @@ public class Inicial extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BAgendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAgendaActionPerformed
-        new RelatorioGeral().setVisible(true);
+      
+        this.dispose();
     }//GEN-LAST:event_BAgendaActionPerformed
 
     private void BCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCadastroActionPerformed
 
         new Cadastros().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BCadastroActionPerformed
 
     private void BImpressãoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BImpressãoActionPerformed
         new Confeccao_Tickets().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BImpressãoActionPerformed
 
     private void BVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BVendaActionPerformed
         new Venda_Tickets().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BVendaActionPerformed
 
     private void BRelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BRelatorioActionPerformed
         new RelatorioGeral().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_BRelatorioActionPerformed
 
     private void BRecebimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BRecebimentoActionPerformed
         new Recebimento_Tickets().setVisible(true);
-        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_BRecebimentoActionPerformed
 
     /**

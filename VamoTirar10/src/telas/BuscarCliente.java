@@ -45,6 +45,7 @@ public class BuscarCliente extends javax.swing.JFrame {
         IAluno = new javax.swing.JRadioButton();
         IServidor = new javax.swing.JRadioButton();
         IProfessor = new javax.swing.JRadioButton();
+        JRelatorio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,6 +72,11 @@ public class BuscarCliente extends javax.swing.JFrame {
         BAlterarDados.setText("Alterar dados");
 
         BHistorico.setText("Histórico");
+        BHistorico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BHistoricoActionPerformed(evt);
+            }
+        });
 
         BCancela.setText("Cancelar");
         BCancela.setMaximumSize(new java.awt.Dimension(117, 23));
@@ -83,6 +89,11 @@ public class BuscarCliente extends javax.swing.JFrame {
 
         BBusca.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BBusca.setText("Buscar");
+        BBusca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BBuscaActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(IAluno);
         IAluno.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -96,25 +107,14 @@ public class BuscarCliente extends javax.swing.JFrame {
         IProfessor.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         IProfessor.setText("Professor");
 
+        JRelatorio.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        JRelatorio.setText("Relatório Geral");
+        JRelatorio.setAlignmentY(0.0F);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(524, 524, 524)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(BAlterarDados)
-                        .addGap(39, 39, 39)
-                        .addComponent(BExcluirRegistro)
-                        .addGap(36, 36, 36)
-                        .addComponent(BHistorico)
-                        .addGap(46, 46, 46)
-                        .addComponent(BCancela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(34, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -141,11 +141,32 @@ public class BuscarCliente extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(IProfessor)))
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(524, 524, 524)
+                                .addComponent(jLabel2))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(BAlterarDados)
+                                .addGap(39, 39, 39)
+                                .addComponent(BExcluirRegistro)
+                                .addGap(36, 36, 36)
+                                .addComponent(BHistorico)
+                                .addGap(46, 46, 46)
+                                .addComponent(BCancela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(207, 207, 207)
+                        .addComponent(JRelatorio)))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addComponent(JRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(IProfessor, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(IServidor, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -156,9 +177,9 @@ public class BuscarCliente extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(TNome, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TIdentificador, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+                    .addComponent(TIdentificador)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel3)))
@@ -199,6 +220,15 @@ public class BuscarCliente extends javax.swing.JFrame {
         new Inicial().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BCancelaActionPerformed
+
+    private void BBuscaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BBuscaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BBuscaActionPerformed
+
+    private void BHistoricoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BHistoricoActionPerformed
+        new RelatorioCliente().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BHistoricoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -247,6 +277,7 @@ public class BuscarCliente extends javax.swing.JFrame {
     private javax.swing.JRadioButton IAluno;
     private javax.swing.JRadioButton IProfessor;
     private javax.swing.JRadioButton IServidor;
+    private javax.swing.JLabel JRelatorio;
     private javax.swing.JTextField TIdentificador;
     private javax.swing.JTextField TNome;
     private javax.swing.ButtonGroup buttonGroup1;

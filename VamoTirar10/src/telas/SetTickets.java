@@ -27,26 +27,27 @@ public class SetTickets extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        IAluno = new javax.swing.JRadioButton();
+        IServidor = new javax.swing.JRadioButton();
+        IProfessor = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        TValor = new javax.swing.JTextPane();
         BConfirmar = new javax.swing.JButton();
         BVoltar = new javax.swing.JButton();
+        JRelatorio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jRadioButton1.setText("Aluno");
+        IAluno.setText("Aluno");
 
-        jRadioButton2.setText("Servidor");
+        IServidor.setText("Servidor");
 
-        jRadioButton3.setText("Professor");
+        IProfessor.setText("Professor");
 
         jLabel1.setText("Novo Valor");
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setViewportView(TValor);
 
         BConfirmar.setText("Confirmar");
 
@@ -57,20 +58,24 @@ public class SetTickets extends javax.swing.JFrame {
             }
         });
 
+        JRelatorio.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        JRelatorio.setText("Ajustar Valor");
+        JRelatorio.setAlignmentY(0.0F);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(68, 68, 68)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jRadioButton1)
+                        .addComponent(IAluno)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton2)
+                        .addComponent(IServidor)
                         .addGap(2, 2, 2)
-                        .addComponent(jRadioButton3))
+                        .addComponent(IProfessor))
+                    .addComponent(JRelatorio)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
                             .addGap(51, 51, 51)
@@ -86,16 +91,17 @@ public class SetTickets extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addComponent(JRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton3))
-                .addGap(32, 32, 32)
+                    .addComponent(IAluno)
+                    .addComponent(IServidor)
+                    .addComponent(IProfessor))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BVoltar)
                     .addComponent(BConfirmar))
@@ -148,11 +154,12 @@ public class SetTickets extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BConfirmar;
     private javax.swing.JButton BVoltar;
+    private javax.swing.JRadioButton IAluno;
+    private javax.swing.JRadioButton IProfessor;
+    private javax.swing.JRadioButton IServidor;
+    private javax.swing.JLabel JRelatorio;
+    private javax.swing.JTextPane TValor;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }

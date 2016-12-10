@@ -30,7 +30,7 @@ public class RelatorioCliente extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         Tabela = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        BCancela = new javax.swing.JButton();
         JRelatorio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -64,11 +64,11 @@ public class RelatorioCliente extends javax.swing.JFrame {
             Tabela.getColumnModel().getColumn(2).setMaxWidth(200);
         }
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton1.setText("Cancelar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BCancela.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BCancela.setText("Cancelar");
+        BCancela.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BCancelaActionPerformed(evt);
             }
         });
 
@@ -86,7 +86,7 @@ public class RelatorioCliente extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(477, 477, 477)
-                                .addComponent(jButton1))
+                                .addComponent(BCancela))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(195, 195, 195)
                                 .addComponent(JRelatorio)))
@@ -104,7 +104,7 @@ public class RelatorioCliente extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(BCancela)
                 .addGap(31, 31, 31))
         );
 
@@ -122,9 +122,10 @@ public class RelatorioCliente extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BCancelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCancelaActionPerformed
         new Inicial().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_BCancelaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,9 +163,9 @@ public class RelatorioCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BCancela;
     private javax.swing.JLabel JRelatorio;
     private javax.swing.JTable Tabela;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
