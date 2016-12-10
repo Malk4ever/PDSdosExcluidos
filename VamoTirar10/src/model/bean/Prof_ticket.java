@@ -16,6 +16,7 @@ public class Prof_ticket {
     private  int id_PR;
     private  Date us;
     private  Date sell;
+    private float price;
 
     public int getId_PR_T() {
         return id_PR_T;

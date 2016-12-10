@@ -16,7 +16,8 @@ public class Stud_ticket {
     private  int id_ST;
     private  Date us;
     private  Date sell;
-
+    private float price;
+    
     public int getId_ST_T() {
         return id_ST_T;
     }
