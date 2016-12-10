@@ -107,9 +107,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="caixa_login">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="caixa_login"/>
-      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="caixa_loginActionPerformed"/>
       </Events>

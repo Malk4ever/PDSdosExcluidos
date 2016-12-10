@@ -50,7 +50,6 @@ public class login extends javax.swing.JFrame {
 
         jPasswordField1.setText("jPasswordField1");
 
-        caixa_login.setText("caixa_login");
         caixa_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 caixa_loginActionPerformed(evt);
