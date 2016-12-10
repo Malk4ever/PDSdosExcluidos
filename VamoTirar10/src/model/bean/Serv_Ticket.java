@@ -16,6 +16,7 @@ public class Serv_Ticket {
     private  int id_SR;
     private  Date us;
     private  Date sell;
+    private float price;
 
     public int getId_SR_T() {
         return id_SR_T;
