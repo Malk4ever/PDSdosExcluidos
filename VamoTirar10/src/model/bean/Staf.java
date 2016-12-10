@@ -9,7 +9,7 @@ package model.bean;
  *
  * @author Leon
  */
-public class Staf {
+public class staf {
     private int id_F;
     private String login;
     private String senha_F;

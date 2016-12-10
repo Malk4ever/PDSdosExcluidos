@@ -9,7 +9,7 @@ package model.bean;
  *
  * @author Leon
  */
-public class Server {
+public class server {
      private int id_SR;
     private String nome;
     private int bad_ticket;

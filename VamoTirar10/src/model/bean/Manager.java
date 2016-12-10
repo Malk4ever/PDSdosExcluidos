@@ -9,7 +9,7 @@ package model.bean;
  *
  * @author Leon
  */
-public class Manager {
+public class manager {
     private int id_M;
     private  String senha_G;
     private  String login;

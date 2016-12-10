@@ -9,7 +9,7 @@ package model.bean;
  *
  * @author Leon
  */
-public class Ticket {
+public class ticket {
     private float TicketAluno;
     private float TicketProfessor;
     private float TicketServidor;    

@@ -6,7 +6,7 @@ import java.util.Date;
  *
  * @author Leon
  */
-public class Cardapio {
+public class cardapio {
     private Date dia;
     private String proteina;
     private  String refeicao;
